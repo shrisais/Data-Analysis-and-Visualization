@@ -1,24 +1,29 @@
 #!/usr/bin/python
 """mapper.py"""
-import sys
-import nltk
+
+# stop words apk
+import nltk 
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('english'))
+
+#for multiple delimiters
+import re
 import string
 
-def clean(s):
-    return ''.join(c for c in s if not c in string.punctuation)
-
-STOPWORDS = nltk.corpus.stopwords.words('english')
-topten = ["site","health","food","awareness","artificial","search","opinion","dangerous","2018"]
-todays
+# input comes from STDIN (standard input)
 for line in sys.stdin:
-    line = unicode(clean(line.lower()), errors='ignore')
+    # remove leading and trailing whitespace
     line = line.strip()
-    words = line.split()
+    # split the line into words
+    words = re.split('[:",. ]',line)
+   
+    # increase counters
     for word in words:
-       if word in STOPWORDS:
-                continue
-       else:
-	    for occur in topten:
-		if(word==occur)
-                  term = "<"+word+","+occur+">"
-       print '%s\t%s' % (term, 1)
+	word = word.lower()
+	word = word.strip()
+	#word = word.strip(string.punctuation)
+	#print (word)
+	if word in topWordList:
+		for wordCheck in words:
+			if word != wordCheck and wordCheck in topWordList:
+				print '%s-%s\t%s' % (word,wordCheck, 1)
