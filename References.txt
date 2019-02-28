@@ -1,0 +1,9 @@
+http://dlab.berkeley.edu/blog/scraping-new-york-times-articles-python-tutorial
+http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+https://stackoverflow.com/questions/29194489/how-to-use-d3-layout-cloud-js-to-create-a-word-cloud-with-a-csv-containing-both
+https://github.com/wvengen/d3-wordcloud
+https://github.com/donaldpminer/hadoop-python-tutorial/blob/master/mrjob_scripts/wordcount.py
+https://chandramanitiwary.wordpress.com/2012/08/19/map-reduce-design-patterns-pairs-stripes/
+https://medium.freecodecamp.org/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe
+https://stackoverflow.com/questions/1936466/beautifulsoup-grab-visible-webpage-text
+https://spark.apache.org/docs/2.2.0/ml-pipeline.html
