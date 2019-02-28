@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Word Cloud</title>
+    <script src="d3.js" charset="utf-8"></script>
+    <script src="d3.layout.cloud.js"></script>
+    <script src="d3.wordcloud.js"></script>
+  </head>
+  <body style="text-align: center">
+    <h1>Wordcloud for Food Safety with Twitter Data</h1>
+    <div id='wordcloud'></div>
+    <script>
+      var words;
+      d3.csv("FoodsafetyTweets.csv",function(d){
+	words = d;
+	console.log(words);
+	d3.wordcloud()
+      .size([500, 300])
+      .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
+      .words(words)
+      .onwordclick(function(d, i) {
+        if (d.href) { window.location = d.href; }
+        })
+        .start();
+      });
+    </script>
+  </body>
+</html>

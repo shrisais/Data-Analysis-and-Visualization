@@ -1,0 +1,6 @@
+<site,health>	1
+<site,awareness>	1
+<search,opinion>	1
+<todays,2018>	1
+<food,search>	1
+<food,artificial>	1

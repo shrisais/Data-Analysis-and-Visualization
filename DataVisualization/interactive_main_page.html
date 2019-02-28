@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Word Cloud</h2>
+
+  <label>Choose a topic :</span> 
+    <select name="title" id="title">
+      <option value="1">Food Safety</option>
+      <option value="2">Marketing</option>
+      <option value="3">Social Media</option>
+    </select>
+    </label>  
+    <label><br />
+    <br />
+     Data Type :</span>
+     <select id ="type" name = "type">
+      <option value="1">Twitter Data</option>
+      <option value="2">News Data</option>
+     </select>
+    </label>
+    <br/>
+    <br/>
+    <button onclick="message()">Go!</button>
+
+<p id="demo"></p>
+
+<SCRIPT language = javascript>
+
+function message() {
+
+var s = document.getElementById('title');
+var item1 = s.options[s.selectedIndex].value;
+var s = document.getElementById('type');
+var item2 = s.options[s.selectedIndex].value;
+
+if (item1 == 1 && item2 == 1) {
+   location.href = "http://127.0.0.1:8000/FoodSafetyTwitter.html";  
+   }
+else if (item1 == 1 && item2 == 2) {
+    location.href = "http://127.0.0.1:8000/FoodsafetyNYtimes.html";
+}
+else if (item1 == 2 && item2 == 1) {
+    location.href = "http://127.0.0.1:8000/MarketingTwitter.html";
+}
+else if (item1 == 2 && item2 == 2) {
+    location.href = "http://127.0.0.1:8000/MarketingNYTimes.html";
+}
+else if (item1 == 3 && item2 == 1) {
+    location.href = "http://127.0.0.1:8000/SocialMediaTwitter.html";
+}
+else if (item1 == 3 && item2 == 2) {
+    location.href = "http://127.0.0.1:8000/SocialMediaNYTimes.html";
+}
+}
+
+</SCRIPT>
+
+</body>
+</html>

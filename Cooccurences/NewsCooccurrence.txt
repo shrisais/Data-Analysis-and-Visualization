@@ -1,0 +1,3 @@
+<food,safety>	2
+<food,fresh>	1
+<work,safety>	1
